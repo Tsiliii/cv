@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install LaTeX
         run: |
@@ -26,7 +26,8 @@ jobs:
             texlive-latex-base \
             texlive-latex-recommended \
             texlive-latex-extra \
-            texlive-fonts-recommended
+            texlive-fonts-recommended \
+            lmodern
 
       - name: Compile CV
         run: |
