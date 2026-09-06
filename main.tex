@@ -1,0 +1,91 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[left=0.62in,right=0.62in,top=0.45in,bottom=0.48in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\definecolor{accent}{HTML}{176B70}
+\definecolor{ACCENT}{HTML}{176B70}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=0.6pt,topsep=1.5pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\bfseries\color{accent}\fontsize{10.4}{11.2}\selectfont\uppercase}{}{0pt}{}[\vspace{-3pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2.5pt}
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#3} \\
+    \multicolumn{2}{@{}l@{}}{\textit{#2}} \\
+    \multicolumn{2}{@{}X@{}}{#4}
+  \end{tabularx}\vspace{-5pt}
+}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{18}{20}\selectfont\bfseries Theodoros Tsilivis}\\[2pt]
+  Boston, MA \enspace$\vert$\enspace
+  \href{mailto:tsilivis@bu.edu}{tsilivis@bu.edu} \enspace$\vert$\enspace
+  \href{https://tsiliii.github.io/}{Website} \enspace$\vert$\enspace
+  \href{https://github.com/Tsiliii}{GitHub} \enspace$\vert$\enspace
+  \href{https://scholar.google.com/citations?hl=en\&user=tx36ugQAAAAJ}{Google Scholar} \enspace$\vert$\enspace
+  \href{https://www.linkedin.com/in/thodoris-tsilivis-703285179/}{LinkedIn}
+\end{center}
+\vspace{-7pt}
+
+\section{Education}
+\entry{Boston University}{Ph.D. Candidate in Computing and Data Science}{Boston, MA \enspace$\vert$\enspace 2023--Present \enspace$\vert$\enspace Expected May 2028}{Advisor: Kira Goldner}
+\par\vspace{8pt}
+\entry{National Technical University of Athens}{B.Sc. and M.Sc. in Electrical and Computer Engineering}{Athens, Greece \enspace$\vert$\enspace 2016--2022}{GPA: 8.95/10 (top 5\%). Thesis: ``Learning Augmented Combinatorial Auctions.'' Advisors: Dimitris Fotakis (NTUA) and Vasilis Gkatzelis (Drexel University).}
+
+\section{Research Interests}
+Algorithmic mechanism design in modern learning environments, including interdependent values, AI-driven markets, and learning-augmented mechanisms.
+
+\section{Published and Ongoing Work}
+\textit{All author lists are in alphabetical order.}
+\begin{itemize}
+  \item Kira Goldner, Taylor Lundy, and \textbf{Thodoris Tsilivis}. ``Auctions and Utility Maximization.'' \textit{Manuscript in preparation}.
+  \item Alon Eden, Kira Goldner, Eldar Kerner, and \textbf{Thodoris Tsilivis}. \href{https://arxiv.org/abs/2607.00101}{``From Welfare to Utility: Generalized Objectives in Budget-Feasible Procurement.''} \textit{ICML 2026}.
+  \item Kira Goldner, Divyarthi Mohan, and \textbf{Thodoris Tsilivis}. \href{https://arxiv.org/abs/2607.00175}{``Knowing Who, Not How Much: Learning-Augmented Mechanisms for Consumer Utility Maximization.''} \textit{ICML 2026}.
+  \item Shahar Dobzinski, Alon Eden, Kira Goldner, Ariel Shaulker, and \textbf{Thodoris Tsilivis}. \href{https://arxiv.org/abs/2506.23896}{``Bilateral Trade with Interdependent Values: Information vs. Approximation.''} \textit{EC 2025}.
+\end{itemize}
+
+\section{Awards}
+\begin{itemize}
+  \item Wexler Fellowship (2023-24).
+  \item Gerondelis Foundation Fellowship (2024-25).
+  \item Eleni Gatzoyiannis Scholarship (2024-25, 2025-26).
+\end{itemize}
+
+\section{Invited Talks, Posters, and Participation}
+\begin{itemize}
+  \item \textbf{Talk:} ``Generalized Objectives in Budget-Feasible Procurement,'' JECCO UK, Oxford, July 2026.
+  \item \textbf{Talk:} ``Bilateral Trade with Interdependent Values,'' Northeastern Theory Seminar, Boston, February 2026.
+  \item \textbf{Talk:} ``Bilateral Trade with Interdependent Values,'' Harvard EconCS Seminar, Boston, February 2026.
+  \item \textbf{Poster:} ``Generalized Objectives in Budget-Feasible Procurement,'' ICML, Seoul, July 2026.
+  \item \textbf{Poster:} ``Learning-Augmented Consumer Utility Maximization,'' ICML, Seoul, July 2026.
+  \item \textbf{Poster:} ``Bilateral Trade with Interdependent Values,'' Workshop on Algorithms, Learning, and Games (ALGA), Sardinia, June 2025.
+  \item \textbf{Volunteer:} Boston Economics and Computing Hub (BEACH) workshops, Boston, Spring and Fall 2025.
+  \item \textbf{Volunteer:} Workshop on Algorithms for Learning and Economics (WALE), Kefalonia, June 2024.
+\end{itemize}
+
+\section{Academic Experience}
+\textbf{Teaching Assistant, Algorithms for Data Science, Boston University} \hfill \textbf{Spring 2026}\\[-2pt]
+Led discussion sections for 60 students; developed discussion, homework, and exam material.\\[2pt]
+\textbf{Undergraduate Researcher and Teaching Assistant, NTUA} \hfill \textbf{2021-2023}\\[-2pt]
+At Corelab, co-organized the algorithms study group; assisted courses in Algorithms and Complexity, Discrete Mathematics, and Computer Programming.
+
+\section{Reviewing}
+External reviewer for Easy Peasy at EC 2026 and Reliable ML from Unreliable Data at NeurIPS 2025; external sub-reviewer for SODA 2026.
+
+\section{Technical Skills}
+\textbf{Theory:} algorithmic game theory, optimization, randomized algorithms, approximation algorithms\\
+\textbf{Programming and tools:} Python, C++, C, Bash, SQL, Git, Linux, Jupyter\\
+\textbf{Machine learning and data:} NumPy, pandas, scikit-learn, PyTorch, TensorFlow/Keras, Matplotlib
+
+\end{document}
